@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+<ul>
+<li>this is the first line</li>
+</ul>
+<button onclick="aloha()">Choose</button>
+<script>
+function aloha(){
+	var ul = document.getElementsByTagName('ul')[0];
+  //make the newP save as Li. Li is a html variable.
+  var newP = document.createElement('li');
+  var newText = document.createTextNode("Jordan go to heaven");
+  //saving the back to the first. newText goes with NewP
+  newP.appendChild(newText);
+  ul.appendChild(newP);
+  //attach it to the body
+  document.body.appendChild(ul);
+}
+</script>
+</body>
+</html>
